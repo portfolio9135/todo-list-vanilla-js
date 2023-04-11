@@ -96,12 +96,10 @@ const createCompleteItemBtn = (target) => {
   backBtn.innerText = '戻す';
 
   backBtn.addEventListener('click', () => {
+    deleteCompleteList(backBtn.parentNode);
     addIncompleteItem(backBtn.parentNode);
     createIncompleteBtn(backBtn.parentNode);
-
     backBtn.remove();
-
-    deleteCompleteList(backBtn.parentNode);
   })
   target.appendChild(backBtn);
 }
