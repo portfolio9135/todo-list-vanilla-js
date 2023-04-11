@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>セクション5: 素のJavaScriptだけでTODOアプリを作成してみよう</title>
+</head>
+
+<body>
+  <main>
+    <div class="input-area">
+      <input id="add-txt" placeholder="TODOを入力">
+      <button id="add-btn">追加</button>
+    </div><!-- /.input-area -->
+
+    <div class="incomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul id="incomplete-area__list">
+        <!-- <li class="list__item">TODOです<button class="fix-btn">完了</button><button class="delete-btn">削除</button></li>
+          <li class="list__item">TODOです<button class="fix-btn">完了</button><button class="delete-btn">削除</button></li> -->
+      </ul><!-- /.incomplete-area__list -->
+    </div><!-- /.incomplete-area -->
+
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul id="complete-area__list">
+        <!-- <li class="list__item">TODOでした<button class="back-btn">戻す</button></li>
+        <li class="list__item">TODOでした<button class="back-btn">戻す</button></li> -->
+      </ul><!-- /.complete-area__list -->
+    </div><!-- /.complete-area -->
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
